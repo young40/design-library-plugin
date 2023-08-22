@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Group-Id: io.jenkins.plugins
+Artifact-Id: design-library
+Short-Name: design-library
+Long-Name: Jenkins Design Library
+Url: https://github.com/jenkinsci/design-library-plugin
+Plugin-Version: 999999-SNAPSHOT (private-25d7e757-young40)
+Hudson-Version: 2.415
+Jenkins-Version: 2.415
+Plugin-Dependencies: ionicons-api:56.v1b_1c8c49374e
+Plugin-Developers: 
+Plugin-License-Name: MIT
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/design-librar
+ y-plugin
+Plugin-ScmTag: HEAD
+Plugin-ScmUrl: https://github.com/jenkinsci/design-library-plugin
+Plugin-GitHash: 25d7e7578a5bdd7de2f21a5caa30ad7bc22130f2
+Implementation-Build: 25d7e7578a5bdd7de2f21a5caa30ad7bc22130f2
+Libraries: /Users/young40/Work/Jenkins/design-library-plugin/src/main/re
+ sources,/Users/young40/Work/Jenkins/design-library-plugin/src/main/java
+ ,/Users/young40/Work/Jenkins/design-library-plugin/target/classes
+Resource-Path: /Users/young40/Work/Jenkins/design-library-plugin/src/mai
+ n/webapp
+

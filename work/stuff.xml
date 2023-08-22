@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<io.jenkins.plugins.designlibrary.HeteroList plugin="design-library@999999-SNAPSHOT">
+  <config>
+    <entries>
+      <io.jenkins.plugins.designlibrary.HeteroList_-ChoiceEntry>
+        <choice>ugly</choice>
+      </io.jenkins.plugins.designlibrary.HeteroList_-ChoiceEntry>
+      <io.jenkins.plugins.designlibrary.HeteroList_-HeteroRadioEntry/>
+      <io.jenkins.plugins.designlibrary.HeteroList_-SimpleEntry>
+        <text></text>
+      </io.jenkins.plugins.designlibrary.HeteroList_-SimpleEntry>
+    </entries>
+  </config>
+</io.jenkins.plugins.designlibrary.HeteroList>

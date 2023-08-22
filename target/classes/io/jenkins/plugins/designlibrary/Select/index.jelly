@@ -1,0 +1,70 @@
+<!--
+The MIT License
+
+Copyright (c) 2004-2010, Oracle Corporation
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+-->
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form" xmlns:s="/lib/samples">
+  <s:sample>
+    <p class="jdl-paragraph">${%title}</p>
+
+    <p class="jdl-paragraph">${%usage.1}</p>
+    <form action="submit" method="post">
+      <s:code language="xml" file="sample.jelly" />
+      <f:dropdownDescriptorSelector field="fruit" title="Fruits" descriptors="${it.fruitDescriptors}" />
+
+      <f:submit value="Save"/>
+    </form>
+    <p style="margin-top: var(--section-padding);" class="jdl-paragraph">${%usage.2}</p>
+
+    <f:entry title="Fruits">
+      <f:select field="fruit"/>
+    </f:entry>
+
+    config.jelly:
+    <s:code language="xml" file="sample2.jelly" />
+
+    Java source code:
+    <s:code language="java" file="Sample.java" />
+
+    <h2 class="jdl-heading">${%dynamic}</h2>
+
+    <p class="jdl-paragraph">${%dynamic.description}</p>
+
+    <form method="post">
+      <f:entry title="Country" field="country">
+        <f:textbox/>
+      </f:entry>
+      <f:entry title="State" field="state">
+        <f:select/>
+      </f:entry>
+      <f:entry title="City" field="city">
+        <f:select/>
+      </f:entry>
+    </form>
+
+    <code>config.jelly:</code>
+    <s:code language="xml" file="dynamic-sample.jelly" />
+
+    <code>Sample.java:</code>
+    <s:code language="java" file="DynamicSample.java" />
+  </s:sample>
+</j:jelly>
